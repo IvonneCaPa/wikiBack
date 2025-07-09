@@ -1,296 +1,87 @@
-# ITA-Wiki Backend
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Laravel-11.x-red.svg" alt="Laravel Version">
-  <img src="https://img.shields.io/badge/PHP-8.2+-blue.svg" alt="PHP Version">
-  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## 📋 Descripción
+## About Laravel
 
-ITA-Wiki es una plataforma de documentación colaborativa desarrollada con Laravel que permite a los estudiantes y desarrolladores compartir, organizar y descubrir recursos educativos relacionados con diferentes tecnologías y lenguajes de programación.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## ✨ Características Principales
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- **Gestión de Recursos**: Crear, editar y organizar recursos educativos con categorías y etiquetas
-- **Sistema de Roles**: Gestión de roles de usuario con autenticación mediante GitHub
-- **Bookmarks y Likes**: Sistema de marcadores y me gusta para recursos favoritos
-- **Pruebas Técnicas**: Gestión de pruebas técnicas por lenguaje de programación
-- **API RESTful**: Documentación completa con Swagger/OpenAPI
-- **Autenticación OAuth**: Integración con GitHub para autenticación de usuarios
-- **Docker**: Configuración completa para desarrollo y producción
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 🛠️ Tecnologías Utilizadas
+## Learning Laravel
 
-- **Backend**: Laravel 11.x
-- **Base de Datos**: MySQL 8.4
-- **PHP**: 8.2+
-- **Documentación API**: L5-Swagger
-- **Autenticación**: Laravel Socialite (GitHub OAuth)
-- **Contenedores**: Docker & Docker Compose
-- **Testing**: PHPUnit
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## 📦 Instalación
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-### Prerrequisitos
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-- Docker y Docker Compose
-- Git
-- Composer (opcional, para desarrollo local)
+## Laravel Sponsors
 
-### Instalación con Docker (Recomendado)
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-1. **Clonar el repositorio**
-   ```bash
-   git clone <url-del-repositorio>
-   cd ita-wiki-backend
-   ```
+### Premium Partners
 
-2. **Configurar variables de entorno**
-   ```bash
-   cp .env.example .env
-   # Editar .env con tus configuraciones
-   ```
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-3. **Levantar los contenedores**
-   ```bash
-   make up
-   ```
+## Contributing
 
-4. **Ejecutar migraciones y seeders**
-   ```bash
-   docker exec -it php php artisan migrate --seed
-   ```
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-5. **Generar clave de aplicación**
-   ```bash
-   docker exec -it php php artisan key:generate
-   ```
+## Code of Conduct
 
-### Instalación Local
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-1. **Instalar dependencias**
-   ```bash
-   composer install
-   npm install
-   ```
+## Security Vulnerabilities
 
-2. **Configurar base de datos**
-   ```bash
-   php artisan migrate --seed
-   ```
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-3. **Iniciar servidor de desarrollo**
-   ```bash
-   php artisan serve
-   ```
+## License
 
-## 🚀 Comandos Útiles
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-### Docker
-```bash
-make up          # Levantar contenedores
-make down        # Detener contenedores
-make clean       # Limpiar todo (contenedores, imágenes, volúmenes)
-make serve       # Iniciar servidor Laravel
-make cache-clear # Limpiar caché
-make route-clear # Limpiar caché de rutas
-```
+## Contributors
 
-### Artisan
-```bash
-php artisan migrate              # Ejecutar migraciones
-php artisan migrate:rollback     # Revertir migraciones
-php artisan db:seed              # Ejecutar seeders
-php artisan route:list           # Listar rutas
-php artisan make:controller      # Crear controlador
-php artisan make:model           # Crear modelo
-```
-
-## 📚 Estructura del Proyecto
-
-```
-ita-wiki-backend/
-├── app/
-│   ├── Console/Commands/        # Comandos Artisan personalizados
-│   ├── Http/
-│   │   ├── Controllers/         # Controladores de la API
-│   │   ├── Requests/            # Form Requests para validación
-│   │   └── Middleware/          # Middleware personalizado
-│   ├── Models/                  # Modelos Eloquent
-│   ├── Observers/               # Observadores de modelos
-│   ├── Providers/               # Service Providers
-│   ├── Rules/                   # Reglas de validación personalizadas
-│   └── Services/                # Servicios de negocio
-├── database/
-│   ├── factories/               # Factories para testing
-│   ├── migrations/              # Migraciones de base de datos
-│   └── seeders/                 # Seeders para datos iniciales
-├── docker/                      # Configuración de Docker
-├── routes/
-│   └── api.php                  # Rutas de la API
-├── tests/                       # Tests automatizados
-└── storage/
-    └── api-docs/                # Documentación de la API
-```
-
-## 🔌 Endpoints de la API
-
-### Autenticación
-- `GET /api/auth/github/redirect` - Redirigir a GitHub OAuth
-- `GET /api/auth/github/callback` - Callback de GitHub OAuth
-- `POST /api/login` - Login con GitHub ID
-- `POST /api/login-node` - Login con Node ID
-
-### Recursos
-- `GET /api/resources` - Listar recursos
-- `POST /api/resources` - Crear recurso (deprecated)
-- `POST /api/v2/resources` - Crear recurso (nueva versión)
-- `GET /api/v2/resources` - Obtener recurso específico
-- `PUT /api/resources/{id}` - Actualizar recurso
-
-### Roles
-- `POST /api/roles` - Crear rol
-- `PUT /api/roles` - Actualizar rol
-- `POST /api/roles-node` - Crear rol con Node ID
-- `PUT /api/roles-node` - Actualizar rol con Node ID
-
-### Bookmarks
-- `GET /api/bookmarks/{github_id}` - Obtener bookmarks de usuario
-- `POST /api/bookmarks` - Crear bookmark
-- `DELETE /api/bookmarks` - Eliminar bookmark
-
-### Likes
-- `GET /api/likes/{github_id}` - Obtener likes de usuario
-- `POST /api/likes` - Crear like
-- `DELETE /api/likes` - Eliminar like
-
-### Etiquetas
-- `GET /api/tags` - Listar etiquetas
-- `GET /api/tags/frequency` - Frecuencia de etiquetas
-- `GET /api/tags/category-frequency` - Frecuencia por categoría
-- `GET /api/tags/by-category` - Etiquetas por categoría
-
-### Pruebas Técnicas
-- `POST /api/technicaltests` - Crear prueba técnica
-
-## 🗄️ Base de Datos
-
-### Tablas Principales
-
-- **users**: Usuarios del sistema
-- **roles**: Roles de usuario (estudiante, profesor, etc.)
-- **resources**: Recursos educativos
-- **tags**: Etiquetas para categorizar recursos
-- **bookmarks**: Marcadores de usuarios
-- **likes**: Me gusta de usuarios
-- **technical_tests**: Pruebas técnicas
-- **roles_node**: Roles con Node ID de GitHub
-
-### Categorías de Recursos
-
-- Node
-- React
-- Angular
-- JavaScript
-- Java
-- Fullstack PHP
-- Data Science
-- BBDD
-
-## 🧪 Testing
-
-```bash
-# Ejecutar todos los tests
-php artisan test
-
-# Ejecutar tests específicos
-php artisan test --filter ResourceTest
-
-# Ejecutar tests con cobertura
-php artisan test --coverage
-```
-
-## 📖 Documentación de la API
-
-La documentación de la API está disponible en:
-- **Swagger UI**: `http://localhost:8000/api/documentation`
-- **JSON**: `http://localhost:8000/docs/api-docs.json`
-
-## 🔧 Configuración
-
-### Variables de Entorno Importantes
-
-```env
-APP_NAME=ITA-Wiki
-APP_ENV=local
-APP_KEY=base64:...
-APP_DEBUG=true
-APP_URL=http://localhost:8000
-
-DB_CONNECTION=mysql
-DB_HOST=mysql
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=user
-DB_PASSWORD=password
-
-GITHUB_CLIENT_ID=your-github-client-id
-GITHUB_CLIENT_SECRET=your-github-client-secret
-GITHUB_REDIRECT_URI=http://localhost:8000/api/auth/github/callback
-```
-
-## 🚀 Despliegue
-
-### Railway
-El proyecto incluye configuración para despliegue en Railway con `railway.json`.
-
-### Docker Production
-```bash
-# Construir imagen de producción
-docker build -t ita-wiki-backend .
-
-# Ejecutar en producción
-docker run -p 8000:8000 ita-wiki-backend
-```
-
-## 🤝 Contribución
-
-1. Fork el proyecto
-2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir un Pull Request
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 👥 Contribuidores
-
-- Luis Vicente
-- Jordi Morillo
-- Juan Valdivia
-- Raquel Martínez
-- Stéphane Carteaux
-- Diego Chacón
-- Óscar Anguera
-- Rossana Liendo
-- Constanza Gómez
-- Xavier R
-- Sergio López
-- Frank Pulido (@frankpulido)
-- Raquel Patiño
-- Anna Mercado
-- Lena Prado
-- Kawsu Nagib
-- Simón Menendez Bravo
-- Ivonne Cantor Páez
-
-## 📞 Soporte
-
-Para soporte técnico o preguntas sobre el proyecto, por favor contacta al equipo de desarrollo o abre un issue en el repositorio.
-
----
-
-**ITA-Wiki** - Plataforma de documentación colaborativa para la comunidad de desarrolladores.
+Luis Vicente
+Jordi Morillo 
+Juan Valdivia 
+Raquel Martínez 
+Stéphane Carteaux 
+Diego Chacón 
+Óscar Anguera 
+Rossana Liendo 
+Constanza Gómez 
+Xavier R 
+Sergio López 
+Frank Pulido (@frankpulido) 
+Raquel Patiño 
+Anna Mercado 
+Lena Prado 
+Kawsu Nagib 
+Simón Menendez Bravo
+Ivonne Cantor Páez
